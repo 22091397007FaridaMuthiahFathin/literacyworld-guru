@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4">
+
+    <!-- Header -->
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Pilih Menu"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+    <!-- CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUsername"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:layout_marginTop="8dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1" >
+
+            <!-- Menulis -->
+            <LinearLayout
+                android:id="@+id/menulisLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/writing"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BuatCeritaku"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+            <!-- Upload PDF -->
+            <LinearLayout
+                android:id="@+id/uploadPDFLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/icon1"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Literasiku"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <!-- Upload Video -->
+            <LinearLayout
+                android:id="@+id/uploadVideoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/icon2"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nonton Yuk!"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+            <!-- info -->
+
+            <LinearLayout
+                android:id="@+id/profilLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/info"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+
+        </GridLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/textViewKumpulanArtikel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yuk, Baca Buku"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_below="@id/cardView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="379dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textViewKumpulanArtikel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="13dp"
+        android:layout_weight="1" />
+
+
+
+
+</RelativeLayout>

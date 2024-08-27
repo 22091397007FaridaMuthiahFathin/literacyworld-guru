@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LiteracyWorld"
+        tools:targetApi="31">
+        <activity
+            android:name="id.literacyworld.guru.list_item_pdf"
+            android:exported="false" />
+
+        <activity
+            android:name="id.literacyworld.guru.list_item_video"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.notif_layout"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.DetailArticleActivity"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.article_item"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.ListArticlesActivity"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.VideoPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.ViewVideosActivity"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.BacaPDF"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.Menulis"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.PDF"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.VUpload"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.Profil"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.Dashboard"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.daftar"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.login"
+            android:exported="false" />
+        <activity
+            android:name="id.literacyworld.guru.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Layanan FirebaseMessaging -->
+        <service
+            android:name="id.literacyworld.guru.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

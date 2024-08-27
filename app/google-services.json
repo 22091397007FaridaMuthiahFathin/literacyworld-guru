@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1000712547543",
+    "firebase_url": "https://literacy-f17fa-default-rtdb.firebaseio.com",
+    "project_id": "literacy-f17fa",
+    "storage_bucket": "literacy-f17fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000712547543:android:c9bfbd8499225f95c8d492",
+        "android_client_info": {
+          "package_name": "id.literacyworld.guru"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiAvl-YUbqXCma2SgoXt8ruCheSgLdSgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000712547543:android:70d8aca97aebe0ffc8d492",
+        "android_client_info": {
+          "package_name": "com.literacy.literacyworld_murid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiAvl-YUbqXCma2SgoXt8ruCheSgLdSgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

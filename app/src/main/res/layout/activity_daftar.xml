@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg3">
+
+    <TextView
+        android:id="@+id/textViewRegisterPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:textStyle="bold"
+        android:text="Silahkan daftar terlebih dahulu"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewRegisterPrompt"
+        android:layout_marginTop="249dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingStart="8dp" />
+
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Nomor NIP"
+        android:inputType="number"
+        android:paddingStart="8dp" />
+
+
+    <Button
+        android:id="@+id/btnRegistrasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextemail"
+        android:layout_marginTop="16dp"
+        android:text="Daftar Dulu" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="8dp" />
+
+</RelativeLayout>
